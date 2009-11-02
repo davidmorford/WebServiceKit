@@ -1,0 +1,22 @@
+WebServiceKit
+=============
+
+Contexts
+--------
+
+NSURLConnection
+---------------
+
+NSOperation
+-----------
+
+
+BuildKit Dependency
+==============================
+
+WebServiceKit, and all projects in the BuildKit "Libraries" project tree, are compiled as a static libraries.
+
+1. ...
+
+2. ...
+  
