@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		631369BB0FC35E62003E201E /* FoundationKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 631369BA0FC35E62003E201E /* FoundationKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		631F35EA109F843F00049972 /* FKNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 631F35E9109F838300049972 /* FKNSObject.m */; };
+		631F35EB109F844000049972 /* FKNSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 631F35E8109F838300049972 /* FKNSObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		638B50F5109F71A600F78330 /* FKPointerArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 638B50F2109F6FE300F78330 /* FKPointerArray.m */; };
+		638B50F6109F71A600F78330 /* FKPointerArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 638B50F1109F6FE300F78330 /* FKPointerArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6390071310901BA2006D72BC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6390071210901BA2006D72BC /* CoreFoundation.framework */; };
+		6390071510901BA2006D72BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6390071410901BA2006D72BC /* CoreGraphics.framework */; };
+		6390079A10901BB7006D72BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		631369BA0FC35E62003E201E /* FoundationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoundationKit.h; path = Source/Project/FoundationKit.h; sourceTree = SOURCE_ROOT; };
+		631F35E8109F838300049972 /* FKNSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FKNSObject.h; path = Source/Classes/Object/Categories/FKNSObject.h; sourceTree = SOURCE_ROOT; };
+		631F35E9109F838300049972 /* FKNSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FKNSObject.m; path = Source/Classes/Object/Categories/FKNSObject.m; sourceTree = SOURCE_ROOT; };
+		63889DE610574B70004D3052 /* Library.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Library.xcconfig; path = Configurations/Library.xcconfig; sourceTree = SOURCE_ROOT; };
+		63889DE710574B70004D3052 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Configurations/Project.xcconfig; sourceTree = SOURCE_ROOT; };
+		63889DE810574B70004D3052 /* Settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Settings.xcconfig; path = Configurations/Settings.xcconfig; sourceTree = SOURCE_ROOT; };
+		63889DE910574B70004D3052 /* UnitTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = UnitTests.xcconfig; path = Configurations/UnitTests.xcconfig; sourceTree = SOURCE_ROOT; };
+		63889DF510574D96004D3052 /* FoundationKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FoundationKit.bundle; sourceTree = "<group>"; };
+		638B50F1109F6FE300F78330 /* FKPointerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FKPointerArray.h; path = Source/Classes/Collections/Classes/FKPointerArray.h; sourceTree = SOURCE_ROOT; };
+		638B50F2109F6FE300F78330 /* FKPointerArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FKPointerArray.m; path = Source/Classes/Collections/Classes/FKPointerArray.m; sourceTree = SOURCE_ROOT; };
+		6390071010901BA2006D72BC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6390071210901BA2006D72BC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		6390071410901BA2006D72BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6390071610901BA2006D72BC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6390071810901BA2006D72BC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6390071A10901BA2006D72BC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libFoundationKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFoundationKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6390071310901BA2006D72BC /* CoreFoundation.framework in Frameworks */,
+				6390071510901BA2006D72BC /* CoreGraphics.framework in Frameworks */,
+				6390079A10901BB7006D72BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libFoundationKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* AtigeoFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				638C15410FB3BC43009649C2 /* Configurations */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				638C154A0FB3BC8E009649C2 /* References */,
+				631369B90FC35E57003E201E /* Resources */,
+				631369B80FC35E57003E201E /* Project */,
+				631369990FC35E57003E201E /* Classes */,
+			);
+			name = AtigeoFoundation;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6390071010901BA2006D72BC /* CFNetwork.framework */,
+				6390071210901BA2006D72BC /* CoreFoundation.framework */,
+				6390071410901BA2006D72BC /* CoreGraphics.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				6390071610901BA2006D72BC /* MobileCoreServices.framework */,
+				6390071810901BA2006D72BC /* Security.framework */,
+				6390071A10901BA2006D72BC /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		631369990FC35E57003E201E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				638B50CC109F6FE300F78330 /* Collections */,
+				631F35E0109F838300049972 /* Object */,
+			);
+			name = Classes;
+			path = Source/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		631369B80FC35E57003E201E /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				631369BA0FC35E62003E201E /* FoundationKit.h */,
+			);
+			name = Project;
+			path = Source/Project;
+			sourceTree = SOURCE_ROOT;
+		};
+		631369B90FC35E57003E201E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63889DF410574D96004D3052 /* Bundles */,
+			);
+			name = Resources;
+			path = Source/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		631F35E0109F838300049972 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				631F35E1109F838300049972 /* Categories */,
+			);
+			name = Object;
+			path = Source/Classes/Object;
+			sourceTree = SOURCE_ROOT;
+		};
+		631F35E1109F838300049972 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				631F35E8109F838300049972 /* FKNSObject.h */,
+				631F35E9109F838300049972 /* FKNSObject.m */,
+			);
+			name = Categories;
+			path = Source/Classes/Object/Categories;
+			sourceTree = SOURCE_ROOT;
+		};
+		63889DF410574D96004D3052 /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+				63889DF510574D96004D3052 /* FoundationKit.bundle */,
+			);
+			name = Bundles;
+			path = Source/Resources/Bundles;
+			sourceTree = SOURCE_ROOT;
+		};
+		638B50CC109F6FE300F78330 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				638B50EA109F6FE300F78330 /* Classes */,
+			);
+			name = Collections;
+			path = Source/Classes/Collections;
+			sourceTree = SOURCE_ROOT;
+		};
+		638B50EA109F6FE300F78330 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				638B50F1109F6FE300F78330 /* FKPointerArray.h */,
+				638B50F2109F6FE300F78330 /* FKPointerArray.m */,
+			);
+			name = Classes;
+			path = Source/Classes/Collections/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		638C15410FB3BC43009649C2 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				63889DE810574B70004D3052 /* Settings.xcconfig */,
+				63889DE710574B70004D3052 /* Project.xcconfig */,
+				63889DE610574B70004D3052 /* Library.xcconfig */,
+				63889DE910574B70004D3052 /* UnitTests.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = SOURCE_ROOT;
+		};
+		638C154A0FB3BC8E009649C2 /* References */ = {
+			isa = PBXGroup;
+			children = (
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+			);
+			name = References;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631369BB0FC35E62003E201E /* FoundationKit.h in Headers */,
+				638B50F6109F71A600F78330 /* FKPointerArray.h in Headers */,
+				631F35EB109F844000049972 /* FKNSObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* FoundationKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "FoundationKit" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+				631369170FC35DAF003E201E /* Deploy Library */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoundationKit;
+			productName = AtigeoFoundation;
+			productReference = D2AAC07E0554694100DB518D /* libFoundationKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FoundationKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* AtigeoFoundation */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* FoundationKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		631369170FC35DAF003E201E /* Deploy Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Deploy Library";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n# Removes Version\n\nrm -dRfv ${BUILD_PLATFORM}/${BUILD_LIBRARY_VERSION_PATH}\n\n# Create Shared Build Space\n\nmkdir -pv ${BUILD_SHARED_ROOT}\nmkdir -pv ${BUILD_SHARED_BUNDLES}\nmkdir -pv ${BUILD_SHARED_LIBRARIES}\nmkdir -pv ${BUILD_SHARED_TOOLS}\nmkdir -pv ${BUILD_SHARED_TESTS}\n\n# Create Target Destination\n\nmkdir -pv ${BUILD_PLATFORM_VERSION}\nmkdir -pv ${BUILD_PLATFORM_VERSION}\nmkdir -pv ${BUILD_PLATFORM_VERSION}/${PRODUCT_NAME}\nmkdir -pv ${BUILD_PLATFORM_VERSION}/${PRODUCT_NAME}/${BUILD_HEADERS}\nmkdir -pv ${BUILD_PLATFORM_VERSION}/${PRODUCT_NAME}/${BUILD_HEADERS}/${PRODUCT_NAME}\nmkdir -pv ${BUILD_PLATFORM_VERSION}/${PRODUCT_NAME}/${BUILD_HEADERS}\nmkdir -pv ${BUILD_PLATFORM_VERSION}/${PRODUCT_NAME}/${BUILD_RESOURCES}\n\n# Copy Headers\n\ncp -Rfv ${BUILT_PRODUCTS_DIR}/usr/local/include/${PRODUCT_NAME}/*.h ${BUILD_PLATFORM_VERSION}/${PRODUCT_NAME}/${BUILD_HEADERS}/${PRODUCT_NAME}\n\n# Copy Library Archive\n\ncp -Rfv ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME} ${DEPLOYED_BUILD_LIBRARY_PATH}/${FULL_PRODUCT_NAME}\n\n# Link (Relink) Library Root\n\nln -sFfhv ${DEPLOYED_BUILD_HEADER_PATH} ${BUILD_PLATFORM}/${IPHONEOS_DEPLOYMENT_TARGET}/${PRODUCT_NAME}/Headers\nln -sFfhv ${DEPLOYED_BUILD_LIBRARY_PATH}/${FULL_PRODUCT_NAME} ${BUILD_PLATFORM}/${IPHONEOS_DEPLOYMENT_TARGET}/${PRODUCT_NAME}/${FULL_PRODUCT_NAME}\n\n# Copy Resource Bundle\n\ncp -Rfv ${SRCROOT}/${LIBRARY_RESOURCE_BUNDLE_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME} ${BUILD_SHARED_BUNDLES}\n\n# Remove .svn\n\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/.svn\n\n\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/en.lproj/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/de.lproj/.svn\n\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Calendar/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Coverflow/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Navigation/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Placeholder/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Search/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Tab/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Table/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Timegraph/.svn\n\nrm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Models/.svn";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638B50F5109F71A600F78330 /* FKPointerArray.m in Sources */,
+				631F35EA109F843F00049972 /* FKNSObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63889DE610574B70004D3052 /* Library.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63889DE610574B70004D3052 /* Library.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63889DE710574B70004D3052 /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63889DE710574B70004D3052 /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		638C15440FB3BC50009649C2 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63889DE710574B70004D3052 /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Profile;
+		};
+		638C15450FB3BC50009649C2 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63889DE610574B70004D3052 /* Library.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Profile;
+		};
+		638C15460FB3BC53009649C2 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63889DE710574B70004D3052 /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Adhoc;
+		};
+		638C15470FB3BC53009649C2 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63889DE610574B70004D3052 /* Library.xcconfig */;
+			buildSettings = {
+			};
+			name = Adhoc;
+		};
+		638C15480FB3BC58009649C2 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63889DE710574B70004D3052 /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Distribution;
+		};
+		638C15490FB3BC58009649C2 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63889DE610574B70004D3052 /* Library.xcconfig */;
+			buildSettings = {
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "FoundationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				638C15450FB3BC50009649C2 /* Profile */,
+				1DEB922008733DC00010E9CD /* Release */,
+				638C15470FB3BC53009649C2 /* Adhoc */,
+				638C15490FB3BC58009649C2 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FoundationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				638C15440FB3BC50009649C2 /* Profile */,
+				1DEB922408733DC00010E9CD /* Release */,
+				638C15460FB3BC53009649C2 /* Adhoc */,
+				638C15480FB3BC58009649C2 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

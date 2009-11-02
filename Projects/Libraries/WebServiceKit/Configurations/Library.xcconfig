@@ -1,0 +1,31 @@
+
+//
+// WebServiceKit/Configurations/Library.xcconfig
+//
+
+#include "../../../Configurations/Library.xcconfig"
+#include "../../../Configurations/Libraries.xcconfig"
+
+// Product Name
+
+PRODUCT_NAME					= WebServiceKit
+
+// Library Version
+
+BUILD_LIBRARY_VERSION			= A
+
+// Library Resource Bundle
+
+LIBRARY_RESOURCE_BUNDLE_NAME	= WebServiceKit.bundle
+
+// Linker Flags
+
+OTHER_LDFLAGS					= $(OBJC_LIBRARY) $(FOUNDATION_KIT_LIBRARY_FLAG)
+// $(JSON_KIT_LIBRARY_FLAG) $(XML_KIT_LIBRARY_FLAG) $(NETWORK_KIT_LIBRARY_FLAG)
+
+// Search Paths
+
+HEADER_SEARCH_PATHS				= $(STDLIB_HEADER)  $(FOUNDATION_KIT_HEADER_PATH)
+// $(JSON_KIT_HEADER_PATH)  $(XML_KIT_HEADER_PATH)
+LIBRARY_SEARCH_PATHS			= $(STDLIB_LIBRARY) $(FOUNDATION_KIT_LIBRARY_PATH)
+// $(JSON_KIT_LIBRARY_PATH) $(XML_KIT_LIBRARY_PATH)
