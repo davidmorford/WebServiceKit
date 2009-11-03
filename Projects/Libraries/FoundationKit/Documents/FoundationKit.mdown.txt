@@ -1,4 +1,0 @@
-
-WebServiceKit Library
-Author:		dpm
-Created:	9/18/2009
